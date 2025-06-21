@@ -3,40 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Options</title>
+  <title>SCCL Emergency Contacts</title>
   <style>
     body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
     }
-    h2 {
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .qr-section {
+      text-align: center;
+    }
+    .qr-section img {
+      width: 180px;
+      margin-bottom: 10px;
+    }
+    .link {
+      font-size: 16px;
+      color: #0073e6;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .column {
+      width: 48%;
+    }
+    h3 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
       color: #333;
     }
-    .btn {
-      display: block;
-      margin: 15px auto;
-      padding: 15px 25px;
-      font-size: 18px;
-      color: white;
-      background-color: #007BFF;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      width: 80%;
-      max-width: 300px;
-    }
-    .btn:hover {
-      background-color: #0056b3;
+    .contact {
+      font-size: 16px;
+      margin: 6px 0;
     }
   </style>
 </head>
 <body>
-  <h2>STPP IT Dept</h2>
-  <a class="btn" href="https://scclmines.com/epis/elogin.aspx?AUKILD=Y/" target="_blank">🌐 Complaint raise </a>
-  <a class="btn" href="tel:+919177837376">📞 VC Call</a>
-  <a class="btn" href="tel:+918897769940">📞 System Problem</a>
-  <a class="btn" href="tel:+919014306073">📞 Network Problem</a>
+  <div class="container">
+    <div class="qr-section">
+      <h2>📱 Scan for Support</h2>
+      <img src="qr-code.png" alt="QR Code" />
+      <div><a class="link" href="https://bit.ly/SCCL-IT-Help">https://bit.ly/SCCL-IT-Help</a></div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>👨‍💻 IT Department</h3>
+        <div class="contact">Helpdesk: +91-98765-43210</div>
+        <div class="contact">Infra Support: +91-90000-12345</div>
+        <div class="contact">App Team: +91-91234-56789</div>
+      </div>
+      <div class="column">
+        <h3>🛡️ Safety Department</h3>
+        <div class="contact">Main Safety: +91-99887-76543</div>
+        <div class="contact">Fire Dept: +91-91111-22222</div>
+        <div class="contact">Emergency: 112</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
